@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+
+h1 {
+    margin-bottom: 20px;
+    color: #ffffff; 
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+#flagImage {
+    width: 300px; 
+    height: auto;
+    border: 2px solid #ffffff; 
+    border-radius: 10px; 
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s; 
+}
+
+#flagImage:hover {
+    transform: scale(1.05); 
+}
+
+#timerDisplay {
+    font-size: 24px;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    position: absolute; 
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1000; 
+}
+
+
+#options {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#options button {
+    background-color: #ffffff; 
+    color: #4CAF50; 
+    border: 2px solid #4CAF50; 
+    padding: 10px 20px; 
+    margin: 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 200px; 
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+#options button:hover {
+    background-color: #4CAF50; 
+    color: #ffffff; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+#options button:active {
+    transform: scale(0.95); 
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+#nextButton {
+    background-color: #008CBA; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: none; /
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+#nextButton:hover {
+    background-color: #007B9E; 
+    transform: translateY(-2px); 
+}
